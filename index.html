@@ -1,23 +1,84 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <header class="container">
+    <div class="row">
+      <h1 class="col-sm-4">Home</h1>
+      <nav class="col-sm-8 text-right">
+        <p>Living Rooms</p>
+        <p>Kitchen & Bathrooms</p>
+        <p>Bedrooms</p>
+      </nav>
+    </div>
+  </header>
+  <section class="jumbotron">
+    <div class="container">
+      <div class="row text-center">
+        <h2>Everything you need in one click</h2>
+        <h3>50% sale on all items</h3>
+                 <h4>Limited time offer</h4>
 
-<div class="home">
+        <a class="btn btn-primary" href="#" role="button">See all</a>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <div class="row">
+      <figure class="col-sm-6">
+        <p>Rustless Steel</p>
+        <img src="http://www.mydecoratingplan.com/wp-content/uploads/2016/03/stainless-steel-kitchen-1.jpg"/>
+    	</figure>
+    	<figure class="col-sm-6">
+        <p>Old school Woodwork</p>
+        <img src="http://aesopsgables.com/wp-content/uploads/2011/08/kitchen-1121.jpg"/>
+    	</figure>
+  	</div>
+    <div class="row">
+      <figure class="col-sm-6">
+        <p>Modern White</p>
+        <img src="http://www.lematic.co/wp-content/uploads/2016/07/stylish-white-kitchen-installations-lwk-kitchens-youtube-also-white-kitchen.jpg
+"/>
+      </figure>
+      <figure class="col-sm-6">
+        <p>Coal Black</p>
+        <img src="http://hometraining.co/wp-content/uploads/black-kitchen-design-by-at-sketch.jpg"/>
+      </figure>
+    </div>
+</section>
+<footer class="container"
+        <div class="row">
+  
+  <p class="col-sm-4"> &copy; 2016 Home </p>
+  <ul class="col-sm-8">
+    <li class="col-sm-1">
+    <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg">
+         </li>
+    <li class="col-sm-1">
+    <img
+         src= "https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg">
+         </li>
+    <li class="col-sm-1">
+    <img
+         src= "https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg"> 
+    </li>
+    <li class="col-sm-1">
+    <img 
+         src= "https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/medium.svg"> 
+    </li>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
   </ul>
+  
+  </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        </footer>
+  
+</body>
+</html>
 
-</div>
